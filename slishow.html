@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Slideshow</title>
+    <link rel="stylesheet" href="slicss.css">
+    <script src="slishow.js" defer></script>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="1.jpg" alt="Slide 1">
+            <p style="text-align: center;">Đúng rồi anh gọi em đó</p>
+        </div>
+        <div class="slide fade">
+            <img src="2.jpg" alt="Slide 2">
+            <div class="question">
+                <p>Em ăn gì chưa nhỉ?</p>
+                <input type="text" id="answer2">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="3.jpg" alt="Slide 3">
+            <div class="question">
+                <p>Có món nào ngon không?</p>
+                <input type="text" id="answer3">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="4.jpg" alt="Slide 4">
+            <div class="question">
+                <p>Trong phòng hả</p>
+                <input type="text" id="answer4">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="5.jpg" alt="Slide 5">
+            <div class="question">
+                <p>Sao không phải với anh vậy :(</p>
+                <input type="text" id="answer5">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="6.jpg" alt="Slide 6">
+            <div class="question">
+                <p>Để bẩn là không được đâu em!</p>
+                <input type="text" id="answer6">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="7.jpg" alt="Slide 7">
+            <div class="question">
+                <p>Đừng quên cất nhé</p>
+                <input type="text" id="answer7">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="8.jpg" alt="Slide 8">
+            <div class="question">
+                <p>Có khô không dị?</p>
+                <input type="text" id="answer8">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="9.jpg" alt="Slide 9">
+            <div class="question">
+                <p>Có không em?</p>
+                <input type="text" id="answer9">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="10.jpg" alt="Slide 10">
+            <div class="question">
+                <p>Đừng ở trên giường nha</p>
+                <input type="text" id="answer10">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="11.jpg" alt="Slide 11">
+            <div class="question">
+                <p>Chắc là đứng nhỉ?</p>
+                <input type="text" id="answer11">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="12.jpg" alt="Slide 12">
+            <div class="question">
+                <p>Vui không?</p>
+                <input type="text" id="answer12">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="13.jpg" alt="Slide 13">
+            <div class="question">
+                <p>Vừa ỉa vừa tâm sự ha?</p>
+                <input type="text" id="answer13">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="14.jpg" alt="Slide 14">
+            <div class="question">
+                <p>Ăn ớt nhiều là đau đó.</p>
+                <input type="text" id="answer14">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="15.jpg" alt="Slide 15">
+            <div class="question">
+                <p>Không xả là thối um đó</p>
+                <input type="text" id="answer15"> 
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="16.jpg" alt="Slide 16">
+            <div class="question">
+                <p>Em ỉa tắc cống à</p>
+                <input type="text" id="answer16">
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="17.jpg" alt="Slide 17">
+            <div class="question">
+                <p>Tay không em nhỉ?</p>
+                <input type="text" id="answer17">
+            </div>
+        </div>
+        <div class="slide fade">
+            <p style="text-align: center;font-size: 50px;">Thôi xàm lồn vậy đủ rồi, tạm biệt em nha</p>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+        <!-- Thêm dot cho tất cả các slide -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- Tiếp tục cho đến dot thứ 16 -->
+    </div>
+</body>
+</html>
